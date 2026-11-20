@@ -1,9 +1,12 @@
 import { copyFile, mkdir, stat } from "node:fs/promises";
-import { resolve } from "node:path";
+import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 async function main() {
   const outputDir = process.env.MAKEFUN_OUTPUT_DIR || "/output";
-  const src = resolve("entry.png");
+  const src = resolve(__dirname, "entry.png");
   const dest = resolve(outputDir, "entry.png");
 
   await mkdir(outputDir, { recursive: true });

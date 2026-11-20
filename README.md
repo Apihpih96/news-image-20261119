@@ -19,13 +19,7 @@ A single 1024×1024 image summarising the five most consequential world stories 
 ## Build
 
 ```bash
-MAKEFUN_OUTPUT_DIR=out node --experimental-strip-types main.ts
-```
-
-Or with `npx tsx`:
-
-```bash
-MAKEFUN_OUTPUT_DIR=out npx tsx main.ts
+MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
 Licence: MIT — see LICENSE.
