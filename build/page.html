@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1024, height=1024">
+<title>News Image — 19 November 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1024px;
+    height: 1024px;
+    background: #0d1117;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    color: #e6edf3;
+    overflow: hidden;
+  }
+
+  .header {
+    width: 1024px;
+    height: 140px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #e94560;
+    position: relative;
+  }
+
+  .header-date {
+    font-size: 52px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 0 2px 8px rgba(233, 69, 96, 0.4);
+  }
+
+  .header-sub {
+    font-size: 16px;
+    color: #8b949e;
+    margin-top: 4px;
+    letter-spacing: 2px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 12px;
+    padding: 12px;
+    height: calc(1024px - 140px - 44px);
+  }
+
+  .panel {
+    background: #161b22;
+    border-radius: 10px;
+    border: 1px solid #30363d;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .panel-illust {
+    width: 100%;
+    height: 110px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .panel-headline {
+    font-size: 18px;
+    font-weight: 700;
+    color: #f0f6fc;
+    line-height: 1.3;
+    margin-bottom: 4px;
+  }
+
+  .panel-desc {
+    font-size: 14px;
+    color: #8b949e;
+    line-height: 1.4;
+  }
+
+  .panel-tag {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* Panel 1: Myanmar — top-left, spans full width as hero */
+  .panel-hero {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    border-color: #e94560;
+  }
+  .panel-hero .panel-illust { height: 100px; }
+  .panel-hero .panel-headline { font-size: 22px; }
+
+  /* Panel 2: APEC Summit */
+  .panel-apec { }
+  .panel-apec .panel-tag { background: #1f6feb; color: #fff; }
+
+  /* Panel 3: Kerch Bridge */
+  .panel-kerch { }
+  .panel-kerch .panel-tag { background: #da3633; color: #fff; }
+
+  /* Panel 4: Anthropic IPO */
+  .panel-anthropic { }
+  .panel-anthropic .panel-tag { background: #238636; color: #fff; }
+
+  /* Panel 5: COP31 */
+  .panel-cop { }
+  .panel-cop .panel-tag { background: #9e6a03; color: #fff; }
+
+  .footer {
+    width: 1024px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0d1117;
+    border-top: 1px solid #30363d;
+    font-size: 13px;
+    color: #484f58;
+    letter-spacing: 1px;
+  }
+
+  /* SVG illustration styles */
+  .svg-illust { width: 100%; height: 100%; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-date">19 NOVEMBER 2026</div>
+  <div class="header-sub">Five stories that shaped the world today</div>
+</div>
+
+<div class="grid">
+
+  <!-- HERO: ICJ Myanmar genocide ruling -->
+  <div class="panel panel-hero">
+    <span class="panel-tag" style="background:#e94560;color:#fff;">International Law</span>
+    <div class="panel-illust">
+      <svg class="svg-illust" viewBox="0 0 600 100" xmlns="http://www.w3.org/2000/svg">
+        <!-- Gavel and scales of justice -->
+        <rect x="10" y="70" width="580" height="4" rx="2" fill="#30363d"/>
+        <!-- Scales -->
+        <rect x="285" y="10" width="8" height="70" rx="3" fill="#e94560"/>
+        <rect x="240" y="18" width="100" height="6" rx="3" fill="#e94560"/>
+        <circle cx="240" cy="40" r="18" fill="none" stroke="#e94560" stroke-width="3"/>
+        <circle cx="340" cy="40" r="18" fill="none" stroke="#e94560" stroke-width="3"/>
+        <!-- Document with stamp -->
+        <rect x="420" y="20" width="60" height="55" rx="3" fill="#16213e" stroke="#e94560" stroke-width="2"/>
+        <text x="450" y="52" text-anchor="middle" font-size="14" font-weight="bold" fill="#e94560">ICJ</text>
+        <circle cx="450" cy="68" r="6" fill="#e94560"/>
+        <!-- Myanmar silhouette hint -->
+        <path d="M 80 25 Q 90 15 100 20 Q 110 10 120 22 Q 130 18 135 30 Q 140 45 130 55 Q 125 65 115 60 Q 100 70 90 65 Q 78 60 75 45 Q 72 35 80 25Z" fill="#0f3460" stroke="#8b949e" stroke-width="1.5"/>
+        <!-- Rohingya text hint -->
+        <text x="105" y="48" text-anchor="middle" font-size="10" fill="#8b949e">Myanmar</text>
+        <!-- Verdict checkmark -->
+        <circle cx="540" cy="35" r="22" fill="#e94560" opacity="0.15"/>
+        <path d="M 528 35 L 538 45 L 555 25" fill="none" stroke="#e94560" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="panel-headline">UN Court Finds Myanmar Committed Genocide Against Rohingya</div>
+    <div class="panel-desc">The ICJ ruled 9–6 that Myanmar's military carried out genocide in 2016–17 — the first-ever state-responsibility genocide finding in the court's 80-year history. Myanmar ordered to pay reparations and ensure safe return.</div>
+  </div>
+
+  <!-- APEC Summit -->
+  <div class="panel panel-apec">
+    <span class="panel-tag">Diplomacy</span>
+    <div class="panel-illust">
+      <svg class="svg-illust" viewBox="0 0 300 110" xmlns="http://www.w3.org/2000/svg">
+        <!-- Three flags / leaders silhouettes -->
+        <circle cx="60" cy="40" r="20" fill="#1f6feb" opacity="0.3"/>
+        <circle cx="150" cy="40" r="20" fill="#da3633" opacity="0.3"/>
+        <circle cx="240" cy="40" r="20" fill="#f0883e" opacity="0.3"/>
+        <!-- Handshake in center -->
+        <path d="M 120 60 L 140 55 L 160 55 L 180 60" fill="none" stroke="#1f6feb" stroke-width="3" stroke-linecap="round"/>
+        <path d="M 130 65 L 150 62 L 170 65" fill="none" stroke="#da3633" stroke-width="3" stroke-linecap="round"/>
+        <!-- APEC text -->
+        <text x="150" y="95" text-anchor="middle" font-size="22" font-weight="bold" fill="#1f6feb" letter-spacing="4">APEC</text>
+        <text x="150" y="108" text-anchor="middle" font-size="10" fill="#8b949e">Shenzhen, China</text>
+      </svg>
+    </div>
+    <div class="panel-headline">Trump, Xi &amp; Putin Hold First-Ever Trilateral Summit</div>
+    <div class="panel-desc">The three leaders met for an hour in Shenzhen, issuing a four-point "peace declaration" on nuclear risks and UN reform — but no mention of Ukraine or Iran.</div>
+  </div>
+
+  <!-- Kerch Bridge -->
+  <div class="panel panel-kerch">
+    <span class="panel-tag">War</span>
+    <div class="panel-illust">
+      <svg class="svg-illust" viewBox="0 0 300 110" xmlns="http://www.w3.org/2000/svg">
+        <!-- Bridge -->
+        <rect x="20" y="55" width="260" height="8" rx="2" fill="#484f58"/>
+        <rect x="20" y="63" width="260" height="6" rx="2" fill="#484f58"/>
+        <!-- Bridge pillars -->
+        <rect x="70" y="30" width="6" height="40" fill="#6e7681"/>
+        <rect x="150" y="30" width="6" height="40" fill="#6e7681"/>
+        <rect x="230" y="30" width="6" height="40" fill="#6e7681"/>
+        <!-- Explosion/break -->
+        <circle cx="153" cy="50" r="15" fill="#da3633" opacity="0.3"/>
+        <circle cx="153" cy="50" r="8" fill="#da3633" opacity="0.5"/>
+        <line x1="140" y1="58" x2="166" y2="58" stroke="#0d1117" stroke-width="6"/>
+        <!-- Missile -->
+        <line x1="100" y1="20" x2="145" y2="45" stroke="#f0883e" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="100" cy="20" r="3" fill="#f0883e"/>
+        <!-- Water -->
+        <path d="M 20 85 Q 50 80 80 85 Q 110 90 140 85 Q 170 80 200 85 Q 230 90 260 85 Q 275 82 280 85" fill="none" stroke="#1f6feb" stroke-width="1.5" opacity="0.5"/>
+        <text x="153" y="105" text-anchor="middle" font-size="10" fill="#8b949e">Kerch Bridge — 3rd strike in 4 days</text>
+      </svg>
+    </div>
+    <div class="panel-headline">Ukraine Hits Kerch Bridge Again, Rail Traffic Halted</div>
+    <div class="panel-desc">Ukrainian Neptune missiles struck the Crimean Bridge for the third time in four days. Russia suspended rail traffic as Putin threatened a "painful" response.</div>
+  </div>
+
+  <!-- Anthropic IPO -->
+  <div class="panel panel-anthropic">
+    <span class="panel-tag">Tech / Finance</span>
+    <div class="panel-illust">
+      <svg class="svg-illust" viewBox="0 0 300 110" xmlns="http://www.w3.org/2000/svg">
+        <!-- Stock chart going up -->
+        <rect x="30" y="20" width="240" height="70" rx="4" fill="#0d1117" stroke="#238636" stroke-width="1"/>
+        <!-- Grid lines -->
+        <line x1="30" y1="38" x2="270" y2="38" stroke="#21262d" stroke-width="0.5"/>
+        <line x1="30" y1="56" x2="270" y2="56" stroke="#21262d" stroke-width="0.5"/>
+        <line x1="30" y1="74" x2="270" y2="74" stroke="#21262d" stroke-width="0.5"/>
+        <!-- Price line -->
+        <polyline points="40,75 70,70 100,72 130,60 160,55 190,40 220,35 250,25" fill="none" stroke="#238636" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Arrow up -->
+        <polygon points="250,22 255,15 260,22" fill="#238636"/>
+        <!-- Labels -->
+        <text x="45" y="98" font-size="12" font-weight="bold" fill="#238636">ANT</text>
+        <text x="100" y="98" font-size="11" fill="#8b949e">Nasdaq</text>
+        <text x="180" y="98" font-size="11" fill="#8b949e">+17%</text>
+        <!-- Dollar sign -->
+        <text x="155" y="55" text-anchor="middle" font-size="28" font-weight="bold" fill="#238636" opacity="0.2">$</text>
+      </svg>
+    </div>
+    <div class="panel-headline">Anthropic IPO Debuts on Nasdaq, Raises Record $81B</div>
+    <div class="panel-desc">Shares priced at $83, opened at $111.50 and closed at $97.17. The AI company briefly touched a ~$2 trillion valuation — the largest IPO on record.</div>
+  </div>
+
+  <!-- COP31 -->
+  <div class="panel panel-cop">
+    <span class="panel-tag">Climate</span>
+    <div class="panel-illust">
+      <svg class="svg-illust" viewBox="0 0 300 110" xmlns="http://www.w3.org/2000/svg">
+        <!-- Earth with crossed out fossil fuel -->
+        <circle cx="80" cy="50" r="35" fill="#0d1117" stroke="#9e6a03" stroke-width="2"/>
+        <!-- Continents hint -->
+        <ellipse cx="72" cy="45" rx="12" ry="15" fill="#9e6a03" opacity="0.3"/>
+        <ellipse cx="90" cy="55" rx="10" ry="8" fill="#9e6a03" opacity="0.3"/>
+        <!-- Factory with smoke -->
+        <rect x="170" y="40" width="50" height="35" rx="3" fill="#30363d"/>
+        <rect x="178" y="25" width="8" height="20" fill="#484f58"/>
+        <rect x="198" y="30" width="8" height="15" fill="#484f58"/>
+        <!-- Smoke -->
+        <circle cx="182" cy="18" r="6" fill="#484f58" opacity="0.4"/>
+        <circle cx="202" cy="22" r="5" fill="#484f58" opacity="0.3"/>
+        <!-- Cross-out line -->
+        <line x1="160" y1="30" x2="230" y2="85" stroke="#da3633" stroke-width="3"/>
+        <!-- COP31 text -->
+        <text x="150" y="98" text-anchor="middle" font-size="18" font-weight="bold" fill="#9e6a03" letter-spacing="2">COP31</text>
+        <text x="150" y="108" text-anchor="middle" font-size="10" fill="#8b949e">Antalya, Türkiye</text>
+      </svg>
+    </div>
+    <div class="panel-headline">COP31 Draft Drops Fossil Fuel Phase-Out Language</div>
+    <div class="panel-desc">Negotiators in Antalya removed any reference to ending fossil fuels from the revised draft deal text, one day before the summit's scheduled close.</div>
+  </div>
+
+</div>
+
+<div class="footer">
+  Sources: Reuters · AP · The Guardian · WSJ · Fortune · UN News · Kyiv Independent · CNN
+</div>
+
+</body>
+</html>
